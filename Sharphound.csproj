@@ -57,7 +57,7 @@
         <Exec Command="$(ProjectDir)tools\Confuser.CLI.exe -n $(ProjectDir)SharpHound.crproj" />
         <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(OutDir)\confused\" ContinueOnError="true" Condition="%(Filename)!='SharpHoundCommonLib.dll'" />
     </Target>
-    
+
     <Target Name="PS1" AfterTargets="Build">
         <Message Text="Test" />
         <Exec Command="powershell -ep bypass -c &quot;. '$(ProjectDir)src\Powershell\Out-CompressedDLL.ps1';Out-CompressedDll -FilePath '$(TargetPath)' -TemplatePath '$(ProjectDir)src\\Powershell\Template.ps1' | Out-File -Encoding ASCII '$(TargetDir)$(TargetName).ps1'&quot;" />
