@@ -1,0 +1,9 @@
+<project outputDir="C:\Users\Rohan\RiderProjects\SharpHound\bin\Obfuscated\net462\Confused" baseDir="C:\Users\Rohan\RiderProjects\SharpHound\bin\Obfuscated\net462" xmlns="http://confuser.codeplex.com">
+  <module path="SharpHoundCommonLib.dll">
+    <rule pattern="true" preset="aggressive" inherit="false" />
+  </module>
+  <module path="SharpHound.exe">
+    <rule pattern="true" preset="aggressive" inherit="false" />
+  </module>
+  <probePath>C:\Users\Rohan\RiderProjects\SharpHound\bin\Obfuscated\net462</probePath>
+</project>
